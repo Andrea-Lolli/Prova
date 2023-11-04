@@ -38,6 +38,8 @@ function confermaMossa() {
 	//TODO getElementById
 	// 1 - Controllare che la mossa inserita dall'utente ha senso
 	
+	console.log("risolto bug");
+	
 	// 2 - inserire X o O nella cella di coordinate x,y
 	
 	// 3 - Controllare se il gioco è terminato (output tramite console.log() 
