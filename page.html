@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Riferimento alla pagina javascript-->
+	<script src="tris.js"></script>
+
+	<!-- CSS interno, non dovete farlo mai...-->
+    <style>
+        .tris-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            margin: 20px auto;
+            width: 320px;
+        }
+
+        .tris-cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .controls {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100px;
+        }
+
+        input[type="button"] {
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tris-grid">
+        <div class="tris-cell" id="cell-1"></div>
+        <div class="tris-cell" id="cell-2"></div>
+        <div class="tris-cell" id="cell-3"></div>
+        <div class="tris-cell" id="cell-4"></div>
+        <div class="tris-cell" id="cell-5"></div>
+        <div class="tris-cell" id="cell-6"></div>
+        <div class="tris-cell" id="cell-7"></div>
+        <div class="tris-cell" id="cell-8"></div>
+        <div class="tris-cell" id="cell-9"></div>
+    </div>
+    <div class="controls">
+        <input type="text" id="coordinatesX" placeholder="X">
+        <input type="text" id="coordinatesY" placeholder="Y">
+        <input type="button" value="Conferma Mossa" id="confirmMove">
+        <input type="button" value="Inizia Partita" id="startGame">
+    </div>
+</body>
+</html>
